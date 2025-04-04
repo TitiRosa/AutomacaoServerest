@@ -14,7 +14,7 @@ public class ServeRest {
     @DisplayName("GetToken")
     public String token(){
         String baseURI = "https://serverest.dev";
-        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("login,json");
+        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("login.json");
 
         String token = given()
                 .contentType(ContentType.JSON)
@@ -25,6 +25,5 @@ public class ServeRest {
                 .extract()
                 .path("accessToken");
         return token;
-
     }
 }

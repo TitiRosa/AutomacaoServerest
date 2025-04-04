@@ -1,0 +1,8 @@
+app:
+
+name: Teste Automatizado API Loja Virtual
+Description: Teste API's
+Url: https://serverest.dev/
+UrlToken: https://serverest.dev/#/Login/post_login
+Usuario: fulano@qa.com
+Senha: teste
